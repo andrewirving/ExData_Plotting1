@@ -52,6 +52,7 @@ png(filename = "plot4.png", width = 480, height = 480, units = "px")
         with(p1_dfSample, lines(Time, Sub_metering_2, col = "red"))
         with(p1_dfSample, lines(Time, Sub_metering_3, col = "blue"))
         with(p1_dfSample, legend("topright"
+                                 , bty = "n"
                                  , legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
                                  , lty = 1
                                  , col = c("black", "red", "blue")))
